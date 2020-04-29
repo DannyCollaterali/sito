@@ -1,0 +1,487 @@
+* { 
+    margin:0 ;
+    padding: 0; 
+  }
+
+/* Menu */
+#nav-bar { 
+           position: sticky; /* posizionamento fisso del menu allo scrolling della pagina */
+	         top: 0;
+           z-index: 10; 
+         }
+
+.navbar-brand img { 
+                    height: 45px; /* dimensione logo */
+	                  padding-left: 20px; /* distanza dal margine sinistro */
+                  }
+
+.navbar-nav li { 
+                 padding: 0 8px; /* 8px distanza tra le varie voci del menu */
+               }
+
+.navbar-nav li a { 
+                   float: right;
+                   text-align: left; 
+                 }
+
+#nav-bar ul li a:hover { 
+                         color: #007bff !important; /* colorazione voci del menu al passare del cursore */
+                       }
+
+.navbar { 
+          background: #fff; /* colorazione background sezione - menu e logo - */
+        }
+
+.navbar-toggler { 
+                  border: none !important; 
+                }
+
+.nav-link { 
+            color: #555 !important; 
+            font-weight: 600;
+            font-size: 16px; /* dimensione voci del menu */
+          }
+
+/* Slider foto */
+#slider { 
+          width: 100%; 
+        }
+
+.carousel-caption { 
+                    top: 50%;
+                    transform: translateY(-50%);
+                    bottom: initial !important; 
+                    height: 400px; 
+                  }
+
+.carousel-caption h5 { 
+                       color: #fff;
+                       font-size: 75px; /* dimensione scritta centrale - Danny Collaterali - */
+                       font-family: 'Lobster', cursive; 
+                       padding-top: 25%; /* posizione scritta */
+                     }
+
+/* Chi siamo */
+#about { 
+         text-align: center;
+	       padding-top: 50px; /* distanza superiore sezione - Chi siamo - */
+         color: #555; /* colore testo */
+       }
+
+#about h1 { 
+            font-family: 'Kanit', sans-serif;
+            padding-bottom: 2px; 
+          }
+
+.about-content { 
+                 font-size: 20px;
+                 font-family: 'News Cycle', sans-serif; 
+               } 
+
+#about .vinile { 
+                 background-image: url(../img/bottone.jpg);
+                 background-size: cover;
+                 background-position: center;
+                 padding-bottom: 100px; 
+               } 
+
+#about .btn { 
+              font-size: 16px;
+              padding-top: 7px;
+              padding-bottom: 3px;
+              margin-top: 20%; /* posizione del bottone */
+            }
+             
+
+
+/* Inizio SECONDA PAGINA HTML | Scopri di più su di noi | */
+
+/* Titolo */
+#title { 
+         background-image: url(../img/slider1.jpg);
+         background-size: cover;
+         background-position: bottom;
+         background-attachment: fixed;
+         padding-top: 140px;
+         padding-bottom: 140px; 
+       }
+
+#title h2 { 
+            text-align: center; 
+            color: #fff;
+            font-size: 75px; /* dimensione scritta centrale - La band nata per ignoranza -  */
+            font-family: 'Lobster', cursive; 
+          } 
+
+/* Storia della band */
+#story { 
+         background-image: url(../img/storia.jpg);
+         background-size: 100% 100% ; /* dimensione immagine di sfondo - 1° larghezza e 2° lunghezza */
+         background-position: right;
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+         padding-top: 35px; /* distanza superiore sezione - storia della band - */
+         padding-bottom: 50px; /* distanza inferiore sezione - storia della band - */
+         color: #555; /* colore testo */
+       }
+
+#story h1 { 
+            text-align: left; 
+            font-family: 'Kanit', sans-serif;
+            padding-top: 12px; 
+            padding-bottom: 20px; /* distanza tra l'intestazione dei paragrafi e il testo */
+          }
+
+#story p { 
+           text-align: left; 
+           font-size: 20px; 
+           font-family: 'News Cycle', sans-serif; 
+         }
+
+.img-story img { 
+                 padding-top: 20px; 
+                 padding-bottom: 50px; /* distanza verticale tra le foto */
+               }
+
+/* Cover principali */
+#cover { 
+         background-image: url(../img/cover.jpg);
+         background-size: cover;
+         background-position: center;
+         color: #efefef !important;
+         background-attachment: fixed;
+         padding-top: 50px;
+         padding-bottom: 15px; 
+       }
+
+#cover h1 { 
+            text-align: center;
+            font-family: 'Kanit', sans-serif;
+            padding-bottom: 35px; /* distanza del testo dal titolo - Cover principali - */
+          }
+
+#cover a { 
+           text-align: center; 
+           text-decoration: none;
+           font-size: 27px;
+           color: #efefef; 
+         }
+
+#cover a:hover { 
+                 color: #007bff; 
+               }
+
+#cover b { 
+           font-size: 20px; 
+         }
+
+#cover p { 
+           font-size: 15px;
+           margin-top: 20px;
+           padding-bottom: 40px; 
+         }
+
+/* Fine SECONDA PAGINA HTML | Scopri di più su di noi | */
+
+
+
+/* Membri della band */  
+#members { 
+           padding-top: 50px;
+           padding-bottom: 50px;
+           color: #555; 
+         }
+
+#members h1 { 
+              text-align: center;
+              font-family: 'Kanit', sans-serif; 
+              padding-bottom: 10px; 
+            }
+
+.profile-pic { 
+               margin-top: 25px; 
+             }
+
+.profile-pic .img-box { 
+                        opacity: 1;
+                        display: block;
+                        position: relative; 
+                      }
+
+.profile-pic .img-box img { 
+                            filter: grayscale(1); /* effetto vintage foto dei membri della band */
+                          }
+
+.profile-pic .img-box img:hover { 
+                                  filter: grayscale(0); /* effetto colorazione foto al passaggio del cursore */
+                                  cursor: pointer; 
+                                }
+
+.profile-pic h2 { 
+                  font-size: 22px;
+                  font-weight: bold;
+                  margin-top: 15px; 
+                }
+
+.about-content { 
+                 padding-top: 20px; /* distanza del testo dal titolo - Chi siamo - */
+               }
+
+/* Galleria */ 
+#gallery { 
+           background-image: url(../img/galleria.jpg); 
+           background-size: cover;
+           background-position: top;
+           color: #efefef !important;
+           background-attachment: fixed;
+           padding-top: 50px;
+           padding-bottom: 60px; 
+         }
+
+#gallery h1 { 
+              text-align: center; 
+              font-family: 'Kanit', sans-serif;
+              padding-bottom: 35px; 
+            }
+
+.img-area { 
+            display: flex; 
+            flex-wrap: wrap;
+            flex-direction: row
+            align-ilems: center;
+            justify-content: center; 
+            overflow: hidden; 
+            text-align: center; 
+          }
+
+.single-img { 
+              padding: 0px 20px 40px; /* 2° distanza orizzontale tra le foto e 3° distanza verticale */
+              max-width: 100%;
+              max-height: 100%;
+              transition: 0.75s; 
+            }
+
+.single-img:hover img { 
+                        transform: scale(1.2); 
+                      }
+
+/* Eventi */
+#events { 
+          background-image: url(../img/eventi.jpg);
+          background-size: cover;
+          background-position: top;
+          color: #efefef !important;
+          background-attachment: fixed;
+          padding-top: 50px;
+          padding-bottom: 50px; 
+        }
+
+#events h1 { 
+             text-align: center; 
+             font-family: 'Kanit', sans-serif;
+             padding-bottom: 10px; 
+           }
+
+#events h1::after { 
+                    content: ""; /* caratteristiche sottolineatura titoli - Eventi precedenti/programma - */
+                    background: #efefef;
+                    display: block; 
+                    height: 3px;
+                    width: 422px;
+                    margin: 20px auto 5px; 
+                  }
+
+#events a { 
+            text-align: center; 
+            font-size: 25px;
+            color: #efefef !important;
+            padding-bottom: 10px; 
+          }
+
+.icon { 
+        font-size: 40px; 
+        margin: 20px auto;
+        padding: 10px; /* centramento contorno icone */
+        height: 80px; 
+        width: 80px;
+        border: 1px solid #fff; /* contorno icone */
+        border-radius: 50%; /* forma circolare contorno icone */
+      }
+
+#events p { 
+            font-size: 17px; /* dimensione scritte sottostanti al nome dei locali */
+            margin-top: 20px; 
+          } 
+
+.events .col-md-3:hover { 
+                          background: #007bff;
+                          cursor: pointer;
+                          transition: 0.7s; 
+                        }  
+
+/* Contatti */
+#contact { 
+           background-image: url(../img/contatti.jpg);
+           background-size: cover;
+           background-position: top;
+           padding-top: 50px;
+           padding-bottom: 60px;
+           color: #777; 
+         }
+
+#contact h1 { 
+              text-align: left; 
+              color: #efefef !important;
+              font-family: 'Kanit', sans-serif; 
+              padding-left: 13px;
+              padding-bottom: 18px; 
+            }
+
+.follow { 
+          background: #fff; /* colorazione e dimensione sezione - contatti della band */
+          padding: 10px;
+          margin: 15px; 
+        }
+
+.contact-info .fa { 
+                    margin: 10px;
+                    font-weight: bold;
+                    text-align: center; 
+                  }
+
+.contact-info .fa-facebook-square { 
+                                    font-size: 27px; /* grandezza icona */
+                                  }
+
+.contact-info .fa-facebook-square:hover { 
+                                          color: #007bff; 
+                                        }
+
+.contact-info .fa-youtube { 
+                            font-size: 29px; 
+                          }
+
+.contact-info .fa-youtube:hover { 
+                                  color: #ff0000; 
+                                }
+
+.contact-info a { 
+                  padding: 3px; /* distanza tra le icone - facebook e youtube - */
+                  color: grey; 
+                }
+
+.btn { 
+       margin: 13px; /* posizione del bottone - Mandaci una email - */
+     }
+
+.contact-info .btn { 
+                     color: #fff;  /* colore scritta - Mandaci una email - */  
+                     font-size: 16px; /* grandezza del bottone */
+                     padding-top: 7px; 
+                     padding-bottom: 3px; /* centramento scritta - Mandaci una email - all'interno del bottone */
+                   }
+                                   
+/* Footer */
+#footer { 
+          background: #fff;
+          padding: 20px; /* distanza superiore  dalla sezione - Contatti - */
+          color: #555 !important; /* colore testo */
+          font-size: 15px; /* dimensione testo */
+        }
+
+/* Initialize Smooth Scroll */
+html { 
+       margin-top: 20px; /* misura scrolling */
+     }
+
+
+
+/* Documentazione */
+
+/* Titolo */
+#doc-title { 
+             background-image: url(../img/doc.title.jpg);
+             background-size: cover;
+             background-position: center;
+             background-attachment: fixed;
+             padding-top: 140px;
+             padding-bottom: 140px; /* allungamento background sezione - titolo - */
+           }
+
+#doc-title h2 { 
+                text-align: left; 
+                color: #fff;
+                font-size: 75px; /* dimensione scritta centrale - Documentazione -  */
+                font-family: 'Lobster', cursive; 
+              } 
+
+/* Abstract */
+#abstract { 
+            padding-top: 35px; /* distanza superiore sezione - abstract - */
+            padding-bottom: 50px; /* distanza inferiore sezione - abstract - */
+            color: #555; 
+          }
+
+#abstract h1 { 
+               text-align: left; 
+               font-family: 'Kanit', sans-serif;
+               padding-top: 12px; 
+               padding-bottom: 20px; /* distanza tra l'intestazione dei paragrafi e il testo */
+             }
+
+#abstract p { 
+              text-align: left; 
+              font-size: 20px; 
+              font-family: 'News Cycle', sans-serif; 
+            }
+
+/* Project Management Plan */
+#plan { 
+        padding-bottom: 50px; 
+        color: #555; 
+      } 
+
+#plan h1 { 
+           text-align: left; 
+           font-family: 'Kanit', sans-serif;
+           padding-bottom: 20px; 
+         } 
+
+#plan h2 { 
+           text-align: left;
+           font-family: 'News Cycle', sans-serif; 
+         }
+
+#plan h3 { 
+           text-align: center; 
+           font-family: 'News Cycle', sans-serif; 
+         }
+
+#plan p { 
+          text-align: left; 
+          font-size: 20px; 
+          font-family: 'News Cycle', sans-serif; 
+        }
+
+/* Communication Strategy */
+#strategy { 
+            padding-bottom: 50px; 
+            color: #555; 
+          } 
+
+#strategy h1 { 
+               text-align: left; 
+               font-family: 'Kanit', sans-serif;
+               padding-bottom: 20px; 
+             }
+
+#strategy h2 { 
+               text-align: left;
+               font-family: 'News Cycle', sans-serif; 
+             }
+
+#strategy p { 
+              text-align: left; 
+              font-size: 20px; 
+              font-family: 'News Cycle', sans-serif; 
+            }
